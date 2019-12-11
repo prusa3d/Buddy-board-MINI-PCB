@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name RESCAXS80P320X160X70-8N)(type Legacy)(uri ${KIPRJMOD}/RESCAXS80P320X160X70-8N.mod)(options "")(descr "")(disabled))
+  (lib (name SOT-416)(type Legacy)(uri ${KIPRJMOD}/SOT-416.mod)(options "")(descr "")(disabled))
+  (lib (name W25X20CLUXIG_TR)(type Legacy)(uri ${KIPRJMOD}/W25X20CLUXIG_TR/W25X20CLUXIG_TR.mod)(options "")(descr ""))
+  (lib (name A3IDES_footprints)(type KiCad)(uri ${KIPRJMOD}/A3IDES_footprints.pretty)(options "")(descr ""))
+)

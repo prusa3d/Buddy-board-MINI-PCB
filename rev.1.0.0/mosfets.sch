@@ -1,0 +1,349 @@
+EESchema Schematic File Version 4
+LIBS:BUDDY_v1.0.0-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 13 14
+Title "Buddy"
+Date "2019-10-24"
+Rev "v1.0.0"
+Comp "PRUSA Research s.r.o."
+Comment1 "http://creativecommons.org/licenses/by-sa/4.0/"
+Comment2 "Licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5CDD588B
+P 3350 3380
+AR Path="/5CDD588B" Ref="R?"  Part="1" 
+AR Path="/5CDD551D/5CDD588B" Ref="R44"  Part="1" 
+F 0 "R44" V 3485 3335 50  0000 L CNN
+F 1 "100R" V 3345 3280 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 3280 3380 50  0001 C CNN
+F 3 "" H 3350 3380 50  0001 C CNN
+F 4 "63mW/1%" V 3420 3390 28  0000 C CNN "req"
+	1    3350 3380
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:MMBF170 Q?
+U 1 1 5CDD5894
+P 3785 3380
+AR Path="/5CDD5894" Ref="Q?"  Part="1" 
+AR Path="/5CDD551D/5CDD5894" Ref="Q3"  Part="1" 
+F 0 "Q3" H 3990 3426 50  0000 L CNN
+F 1 "PSMN2R6-40YS" H 3990 3335 50  0000 L CNN
+F 2 "A3IDES_footprints:SOT-669_LFPAK_alternate-numbers_VIA" H 3985 3305 50  0001 L CIN
+F 3 "" H 3785 3380 50  0001 L CNN
+F 4 "40V/100A/272W/1,8mΩ" H 3785 3380 50  0001 C CNN "req"
+F 5 "" H 3785 3380 50  0001 C CNN "alt"
+	1    3785 3380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3380 3585 3380
+$Comp
+L power:GND #PWR?
+U 1 1 5CDD589C
+P 3885 3580
+AR Path="/5CDD589C" Ref="#PWR?"  Part="1" 
+AR Path="/5CDD551D/5CDD589C" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 3885 3330 50  0001 C CNN
+F 1 "GND" H 3890 3407 50  0000 C CNN
+F 2 "" H 3885 3580 50  0001 C CNN
+F 3 "" H 3885 3580 50  0001 C CNN
+	1    3885 3580
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3885 3180 3885 3055
+Wire Wire Line
+	3885 2825 4080 2825
+$Comp
+L Device:LED_ALT D?
+U 1 1 5CDD58A5
+P 4230 2825
+AR Path="/5CDD58A5" Ref="D?"  Part="1" 
+AR Path="/5CDD551D/5CDD58A5" Ref="D13"  Part="1" 
+F 0 "D13" H 4235 2725 50  0000 C CNN
+F 1 "GRN" H 4221 2621 28  0001 C CNN
+F 2 "A3IDES_footprints:LED_0603" H 4230 2825 50  0001 C CNN
+F 3 "" H 4230 2825 50  0001 C CNN
+F 4 "2,8V/5mA" H 4235 2920 28  0000 C CNN "req"
+	1    4230 2825
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDD58AD
+P 4585 2825
+AR Path="/5CDD58AD" Ref="R?"  Part="1" 
+AR Path="/5CDD551D/5CDD58AD" Ref="R45"  Part="1" 
+F 0 "R45" V 4715 2775 50  0000 L CNN
+F 1 "10k" V 4580 2755 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0603_1608Metric" V 4515 2825 50  0001 C CNN
+F 3 "" H 4585 2825 50  0001 C CNN
+F 4 "0,1W/1%" V 4655 2825 28  0000 C CNN "req"
+	1    4585 2825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4380 2825 4435 2825
+$Comp
+L Connector_Generic:Conn_01x02 P?
+U 1 1 5CDD58B6
+P 5135 2925
+AR Path="/5CDD58B6" Ref="P?"  Part="1" 
+AR Path="/5CDD551D/5CDD58B6" Ref="P5"  Part="1" 
+F 0 "P5" H 5080 2730 50  0000 L CNN
+F 1 "TBG-5-PW-2P/GN" V 5240 2665 28  0000 L CNN
+F 2 "A3IDES_footprints:PhoenixContact_MSTBVA-G_02x5.08mm_Vertical" H 5135 2925 50  0001 C CNN
+F 3 "" H 5135 2925 50  0001 C CNN
+F 4 "1x2/5,08mm/shrouded/male" V 5300 2580 28  0000 L CNN "req"
+	1    5135 2925
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3885 3055 4935 3055
+Wire Wire Line
+	4935 3055 4935 2925
+Connection ~ 3885 3055
+Wire Wire Line
+	3885 3055 3885 2825
+Wire Wire Line
+	3885 3055 3635 3055
+Wire Wire Line
+	3635 3055 3635 2965
+$Comp
+L Device:D_Schottky_ALT D?
+U 1 1 5CDD58C5
+P 3635 2815
+AR Path="/5CDD58C5" Ref="D?"  Part="1" 
+AR Path="/5CDD551D/5CDD58C5" Ref="D12"  Part="1" 
+F 0 "D12" V 3515 2520 50  0000 L CNN
+F 1 "SK310A-TP" V 3600 2450 28  0000 L CNN
+F 2 "A3IDES_footprints:DO-214AC" H 3635 2815 50  0001 C CNN
+F 3 "" H 3635 2815 50  0001 C CNN
+F 4 "100V/3A" V 3665 2570 28  0000 C CNN "req"
+F 5 "" V 3635 2815 50  0001 C CNN "alt"
+	1    3635 2815
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDD58D9
+P 3035 3590
+AR Path="/5CDD58D9" Ref="R?"  Part="1" 
+AR Path="/5CDD551D/5CDD58D9" Ref="R43"  Part="1" 
+F 0 "R43" V 3170 3545 50  0000 L CNN
+F 1 "100k" V 3030 3490 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 2965 3590 50  0001 C CNN
+F 3 "" H 3035 3590 50  0001 C CNN
+F 4 "63mW/1%" V 3105 3600 28  0000 C CNN "req"
+	1    3035 3590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3035 3440 3035 3380
+Wire Wire Line
+	3035 3380 2960 3380
+Connection ~ 3035 3380
+$Comp
+L power:GND #PWR?
+U 1 1 5CDD58E4
+P 3035 3740
+AR Path="/5CDD58E4" Ref="#PWR?"  Part="1" 
+AR Path="/5CDD551D/5CDD58E4" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 3035 3490 50  0001 C CNN
+F 1 "GND" H 3040 3567 50  0000 C CNN
+F 2 "" H 3035 3740 50  0001 C CNN
+F 3 "" H 3035 3740 50  0001 C CNN
+	1    3035 3740
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDD58EB
+P 7155 3390
+AR Path="/5CDD58EB" Ref="R?"  Part="1" 
+AR Path="/5CDD551D/5CDD58EB" Ref="R47"  Part="1" 
+F 0 "R47" V 7290 3345 50  0000 L CNN
+F 1 "100R" V 7150 3290 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 7085 3390 50  0001 C CNN
+F 3 "" H 7155 3390 50  0001 C CNN
+F 4 "63mW/1%" V 7225 3400 28  0000 C CNN "req"
+	1    7155 3390
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:MMBF170 Q?
+U 1 1 5CDD58F4
+P 7590 3390
+AR Path="/5CDD58F4" Ref="Q?"  Part="1" 
+AR Path="/5CDD551D/5CDD58F4" Ref="Q4"  Part="1" 
+F 0 "Q4" H 7795 3436 50  0000 L CNN
+F 1 "PSMN2R6-40YS" H 7795 3345 50  0000 L CNN
+F 2 "A3IDES_footprints:SOT-669_LFPAK_alternate-numbers_VIA" H 7790 3315 50  0001 L CIN
+F 3 "" H 7590 3390 50  0001 L CNN
+F 4 "40V/100A/272W/1,8mΩ" H 7590 3390 50  0001 C CNN "req"
+F 5 "" H 7590 3390 50  0001 C CNN "alt"
+	1    7590 3390
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7305 3390 7390 3390
+$Comp
+L power:GND #PWR?
+U 1 1 5CDD58FC
+P 7690 3590
+AR Path="/5CDD58FC" Ref="#PWR?"  Part="1" 
+AR Path="/5CDD551D/5CDD58FC" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 7690 3340 50  0001 C CNN
+F 1 "GND" H 7695 3417 50  0000 C CNN
+F 2 "" H 7690 3590 50  0001 C CNN
+F 3 "" H 7690 3590 50  0001 C CNN
+	1    7690 3590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7690 3190 7690 3065
+Wire Wire Line
+	7690 2835 7885 2835
+$Comp
+L Device:LED_ALT D?
+U 1 1 5CDD5905
+P 8035 2835
+AR Path="/5CDD5905" Ref="D?"  Part="1" 
+AR Path="/5CDD551D/5CDD5905" Ref="D15"  Part="1" 
+F 0 "D15" H 8040 2735 50  0000 C CNN
+F 1 "GRN" H 8026 2631 28  0001 C CNN
+F 2 "A3IDES_footprints:LED_0603" H 8035 2835 50  0001 C CNN
+F 3 "" H 8035 2835 50  0001 C CNN
+F 4 "2,8V/5mA" H 8040 2930 28  0000 C CNN "req"
+	1    8035 2835
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDD590D
+P 8390 2835
+AR Path="/5CDD590D" Ref="R?"  Part="1" 
+AR Path="/5CDD551D/5CDD590D" Ref="R48"  Part="1" 
+F 0 "R48" V 8520 2785 50  0000 L CNN
+F 1 "10k" V 8385 2765 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0603_1608Metric" V 8320 2835 50  0001 C CNN
+F 3 "" H 8390 2835 50  0001 C CNN
+F 4 "0,1W/1%" V 8460 2835 28  0000 C CNN "req"
+	1    8390 2835
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8185 2835 8240 2835
+Connection ~ 7690 3065
+Wire Wire Line
+	7690 3065 7690 2835
+Wire Wire Line
+	7690 3065 7440 3065
+Wire Wire Line
+	7440 3065 7440 2975
+$Comp
+L Device:D_Schottky_ALT D?
+U 1 1 5CDD591B
+P 7440 2825
+AR Path="/5CDD591B" Ref="D?"  Part="1" 
+AR Path="/5CDD551D/5CDD591B" Ref="D14"  Part="1" 
+F 0 "D14" V 7320 2530 50  0000 L CNN
+F 1 "SK310A-TP" V 7405 2460 28  0000 L CNN
+F 2 "A3IDES_footprints:DO-214AC" H 7440 2825 50  0001 C CNN
+F 3 "" H 7440 2825 50  0001 C CNN
+F 4 "100V/3A" V 7470 2580 28  0000 C CNN "req"
+F 5 "" V 7440 2825 50  0001 C CNN "alt"
+	1    7440 2825
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDD5929
+P 6840 3600
+AR Path="/5CDD5929" Ref="R?"  Part="1" 
+AR Path="/5CDD551D/5CDD5929" Ref="R46"  Part="1" 
+F 0 "R46" V 6975 3555 50  0000 L CNN
+F 1 "100k" V 6835 3500 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 6770 3600 50  0001 C CNN
+F 3 "" H 6840 3600 50  0001 C CNN
+F 4 "63mW/1%" V 6910 3610 28  0000 C CNN "req"
+	1    6840 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6840 3450 6840 3390
+Wire Wire Line
+	6840 3390 6765 3390
+Connection ~ 6840 3390
+$Comp
+L power:GND #PWR?
+U 1 1 5CDD5934
+P 6840 3750
+AR Path="/5CDD5934" Ref="#PWR?"  Part="1" 
+AR Path="/5CDD551D/5CDD5934" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 6840 3500 50  0001 C CNN
+F 1 "GND" H 6845 3577 50  0000 C CNN
+F 2 "" H 6840 3750 50  0001 C CNN
+F 3 "" H 6840 3750 50  0001 C CNN
+	1    6840 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8540 2835 8635 2835
+Wire Wire Line
+	4735 2825 4830 2825
+Wire Wire Line
+	8635 2720 8635 2835
+Wire Wire Line
+	4830 2825 4830 2720
+Connection ~ 4830 2825
+Wire Wire Line
+	4830 2825 4935 2825
+Wire Wire Line
+	3035 3380 3200 3380
+Wire Wire Line
+	6840 3390 7005 3390
+Text HLabel 2960 3380 0    50   Input ~ 0
+HEAT-0-5V
+$Comp
+L Connector_Generic:Conn_01x02 P?
+U 1 1 5CDE5395
+P 8955 2935
+AR Path="/5CDE5395" Ref="P?"  Part="1" 
+AR Path="/5CDD551D/5CDE5395" Ref="P6"  Part="1" 
+F 0 "P6" H 8900 2740 50  0000 L CNN
+F 1 "TBG-5-PW-2P/GN" V 9060 2675 28  0000 L CNN
+F 2 "A3IDES_footprints:PhoenixContact_MSTBVA-G_02x5.08mm_Vertical" H 8955 2935 50  0001 C CNN
+F 3 "" H 8955 2935 50  0001 C CNN
+F 4 "1x2/5,08mm/shrouded/male" V 9120 2590 28  0000 L CNN "req"
+	1    8955 2935
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8635 2835 8755 2835
+Connection ~ 8635 2835
+Wire Wire Line
+	8755 2935 8635 2935
+Wire Wire Line
+	8635 2935 8635 3065
+Wire Wire Line
+	7690 3065 8635 3065
+Text HLabel 6765 3390 0    50   Input ~ 0
+BED-HEAT-5V
+Text GLabel 4830 2720 1    50   Input ~ 0
+24V2
+Text GLabel 3635 2665 1    50   Input ~ 0
+24V2
+Text GLabel 7440 2675 1    50   Input ~ 0
+24V2
+Text GLabel 8635 2720 1    50   Input ~ 0
+24V2
+$EndSCHEMATC

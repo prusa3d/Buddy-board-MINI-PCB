@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+LIBS:BUDDY_v1.0.0-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 14
+Title "Buddy"
+Date "2019-10-24"
+Rev "v1.0.0"
+Comp "PRUSA Research s.r.o."
+Comment1 "http://creativecommons.org/licenses/by-sa/4.0/"
+Comment2 "Licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L A3IDES-rescue:W25Q32JVSSIQ U2
+U 1 1 5CDB2EAC
+P 5420 3265
+F 0 "U2" H 5420 3732 50  0000 C CNN
+F 1 "W25Q64JVSSIQ" H 5420 3641 50  0000 C CNN
+F 2 "A3IDES_footprints:SOIC8-wide" H 5420 3265 50  0001 L BNN
+F 3 "" H 5420 3265 50  0001 L BNN
+F 4 "UFDFN-8 Winbond" H 5420 3265 50  0001 L BNN "Pole4"
+F 5 "None" H 5420 3265 50  0001 L BNN "Pole5"
+F 6 "W25X20CLUXIG TR" H 5420 3265 50  0001 L BNN "Pole6"
+F 7 "Ic Flash 2mbit 104mhz" H 5420 3265 50  0001 L BNN "req"
+F 8 "Winbond" H 5420 3265 50  0001 L BNN "Pole8"
+F 9 "" H 5420 3265 50  0001 C CNN "alt"
+	1    5420 3265
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5CDB2F48
+P 6280 3630
+F 0 "#PWR0123" H 6280 3380 50  0001 C CNN
+F 1 "GND" H 6285 3457 50  0000 C CNN
+F 2 "" H 6280 3630 50  0001 C CNN
+F 3 "" H 6280 3630 50  0001 C CNN
+	1    6280 3630
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6280 3630 6280 3365
+Wire Wire Line
+	6280 3365 6120 3365
+$Comp
+L power:+3V3 #PWR0124
+U 1 1 5CDB2FA6
+P 6280 2950
+F 0 "#PWR0124" H 6280 2800 50  0001 C CNN
+F 1 "+3V3" H 6295 3123 50  0000 C CNN
+F 2 "" H 6280 2950 50  0001 C CNN
+F 3 "" H 6280 2950 50  0001 C CNN
+	1    6280 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6120 3065 6280 3065
+Wire Wire Line
+	6280 3065 6280 2950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CDB305C
+P 6915 3080
+AR Path="/5C86CD9C/5CDB305C" Ref="#PWR?"  Part="1" 
+AR Path="/5CDB2E57/5CDB305C" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR0135" H 6915 2930 50  0001 C CNN
+F 1 "+3.3V" H 6930 3253 50  0000 C CNN
+F 2 "" H 6915 3080 50  0001 C CNN
+F 3 "" H 6915 3080 50  0001 C CNN
+	1    6915 3080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CDB3062
+P 6915 3280
+AR Path="/5C86CD9C/5CDB3062" Ref="#PWR?"  Part="1" 
+AR Path="/5CDB2E57/5CDB3062" Ref="#PWR0136"  Part="1" 
+F 0 "#PWR0136" H 6915 3030 50  0001 C CNN
+F 1 "GND" H 6920 3107 50  0000 C CNN
+F 2 "" H 6915 3280 50  0001 C CNN
+F 3 "" H 6915 3280 50  0001 C CNN
+	1    6915 3280
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CDB3069
+P 6915 3180
+AR Path="/5CDB3069" Ref="C?"  Part="1" 
+AR Path="/5C7CC220/5CDB3069" Ref="C?"  Part="1" 
+AR Path="/5D03F01C/5CDB3069" Ref="C?"  Part="1" 
+AR Path="/5C86CD9C/5CDB3069" Ref="C?"  Part="1" 
+AR Path="/5CDB2E57/5CDB3069" Ref="C14"  Part="1" 
+F 0 "C14" V 6870 3225 50  0000 L CNN
+F 1 "100n" V 7080 3115 50  0000 L CNN
+F 2 "A3IDES_footprints:C_0603_1608Metric" H 6953 3030 50  0001 C CNN
+F 3 "" H 6915 3180 50  0001 C CNN
+F 4 "50V/X7R/10%" V 7015 3030 28  0000 L CNN "req"
+	1    6915 3180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0141
+U 1 1 5CDB3080
+P 4530 2980
+F 0 "#PWR0141" H 4530 2830 50  0001 C CNN
+F 1 "+3V3" H 4545 3153 50  0000 C CNN
+F 2 "" H 4530 2980 50  0001 C CNN
+F 3 "" H 4530 2980 50  0001 C CNN
+	1    4530 2980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4530 3265 4530 3165
+Wire Wire Line
+	4530 3265 4720 3265
+Wire Wire Line
+	4720 3165 4530 3165
+Connection ~ 4530 3165
+Wire Wire Line
+	4530 3165 4530 2980
+Text HLabel 4720 3365 0    50   Input ~ 0
+SCK
+Text HLabel 6120 3165 2    50   Input ~ 0
+MISO
+Text HLabel 6120 3265 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	4720 3065 4415 3065
+Text HLabel 4415 3065 0    50   Input ~ 0
+FLASH-CSN
+$EndSCHEMATC

@@ -1,0 +1,18 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# MEC
+#
+DEF MEC M 0 40 Y Y 1 F N
+F0 "M" 50 40 50 H V L CNN
+F1 "MEC" 50 -30 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -10 50 40 0 0 1 0 N
+P 2 0 1 0 0 10 30 40 N
+P 2 0 1 0 30 10 0 40 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,442 @@
+EESchema Schematic File Version 4
+LIBS:BUDDY_v1.0.0-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 14
+Title "Buddy"
+Date "2019-10-24"
+Rev "v1.0.0"
+Comp "PRUSA Research s.r.o."
+Comment1 "http://creativecommons.org/licenses/by-sa/4.0/"
+Comment2 "Licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Diode:BAS40-04 D?
+U 1 1 5C839108
+P 3515 2990
+AR Path="/5C839108" Ref="D?"  Part="1" 
+AR Path="/5C838825/5C839108" Ref="D7"  Part="1" 
+F 0 "D7" H 3515 3315 50  0000 C CNN
+F 1 "BAV99W" H 3515 3224 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 3265 3290 50  0001 L CNN
+F 3 "" H 3395 3090 50  0001 C CNN
+F 4 "100V/150mA/4ns" H 3515 3175 28  0000 C CNN "req"
+	1    3515 2990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 P?
+U 1 1 5C839111
+P 4625 3295
+AR Path="/5C839111" Ref="P?"  Part="1" 
+AR Path="/5C838825/5C839111" Ref="P3"  Part="1" 
+F 0 "P3" H 4605 3410 50  0000 L CNN
+F 1 "70543-0001" V 4725 3110 28  0000 L CNN
+F 2 "A3IDES_footprints:Pin_1x02-XL" H 4625 3295 50  0001 C CNN
+F 3 "" H 4625 3295 50  0001 C CNN
+F 4 "1x2/2,54mm/male" V 4785 3045 28  0000 L CNN "req"
+F 5 "" H 4625 3295 50  0001 C CNN "alt"
+	1    4625 3295
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C839119
+P 4150 3095
+AR Path="/5C839119" Ref="R?"  Part="1" 
+AR Path="/5C838825/5C839119" Ref="R13"  Part="1" 
+F 0 "R13" H 3940 3105 50  0000 L CNN
+F 1 "4k7" V 4150 3025 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 4080 3095 50  0001 C CNN
+F 3 "" H 4150 3095 50  0001 C CNN
+F 4 "63mW/1%" V 4255 3090 28  0000 C CNN "req"
+	1    4150 3095
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C839121
+P 3270 3295
+AR Path="/5C839121" Ref="R?"  Part="1" 
+AR Path="/5C838825/5C839121" Ref="R11"  Part="1" 
+F 0 "R11" V 3180 3210 50  0000 L CNN
+F 1 "2k37" V 3270 3195 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 3200 3295 50  0001 C CNN
+F 3 "" H 3270 3295 50  0001 C CNN
+F 4 "63mW/1%" V 3375 3290 28  0000 C CNN "req"
+	1    3270 3295
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C839129
+P 3780 3295
+AR Path="/5C839129" Ref="R?"  Part="1" 
+AR Path="/5C838825/5C839129" Ref="R12"  Part="1" 
+F 0 "R12" V 3690 3210 50  0000 L CNN
+F 1 "2k37" V 3780 3200 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 3710 3295 50  0001 C CNN
+F 3 "" H 3780 3295 50  0001 C CNN
+F 4 "63mW/1%" V 3885 3290 28  0000 C CNN "req"
+	1    3780 3295
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3630 3295 3515 3295
+Wire Wire Line
+	3005 2985 3005 2890
+Wire Wire Line
+	3005 2890 3215 2890
+Wire Wire Line
+	3005 3185 3005 3295
+Wire Wire Line
+	3005 3295 3120 3295
+Wire Wire Line
+	3515 3090 3515 3295
+Connection ~ 3515 3295
+Wire Wire Line
+	3515 3295 3420 3295
+Wire Wire Line
+	3005 2890 2915 2890
+Connection ~ 3005 2890
+$Comp
+L power:GND #PWR?
+U 1 1 5C839142
+P 2915 2890
+AR Path="/5C839142" Ref="#PWR?"  Part="1" 
+AR Path="/5C838825/5C839142" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 2915 2640 50  0001 C CNN
+F 1 "GND" H 2920 2717 50  0000 C CNN
+F 2 "" H 2915 2890 50  0001 C CNN
+F 3 "" H 2915 2890 50  0001 C CNN
+	1    2915 2890
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 3245 4150 3295
+Wire Wire Line
+	3930 3295 4150 3295
+Connection ~ 4150 3295
+Wire Wire Line
+	4150 2945 4150 2890
+Wire Wire Line
+	4150 2890 3815 2890
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 5C83914E
+P 4325 3605
+AR Path="/5C471068/5C83914E" Ref="L?"  Part="1" 
+AR Path="/5C83914E" Ref="L?"  Part="1" 
+AR Path="/5C838825/5C83914E" Ref="L5"  Part="1" 
+F 0 "L5" V 4440 3610 50  0000 C CNN
+F 1 "BLM18KG121TN1D" V 4225 3580 28  0000 C CNN
+F 2 "A3IDES_footprints:R_0603_1608Metric" V 4459 3605 50  0001 C CNN
+F 3 "" H 4325 3605 50  0001 C CNN
+F 4 "120Ω@100MHz/3A" V 4280 3585 28  0000 C CNN "req"
+	1    4325 3605
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C839155
+P 4325 3755
+AR Path="/5C839155" Ref="#PWR?"  Part="1" 
+AR Path="/5C838825/5C839155" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 4325 3505 50  0001 C CNN
+F 1 "GND" H 4490 3675 50  0000 C CNN
+F 2 "" H 4325 3755 50  0001 C CNN
+F 3 "" H 4325 3755 50  0001 C CNN
+	1    4325 3755
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3005 3295 2770 3295
+Connection ~ 3005 3295
+Wire Wire Line
+	4150 2890 4150 2825
+Connection ~ 4150 2890
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C839160
+P 4150 2825
+AR Path="/5C839160" Ref="#PWR?"  Part="1" 
+AR Path="/5C838825/5C839160" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 4150 2675 50  0001 C CNN
+F 1 "+3.3V" H 4165 2998 50  0000 C CNN
+F 2 "" H 4150 2825 50  0001 C CNN
+F 3 "" H 4150 2825 50  0001 C CNN
+	1    4150 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3295 4425 3295
+Wire Wire Line
+	4325 3195 4325 3455
+Wire Wire Line
+	4325 3195 4425 3195
+$Comp
+L Diode:BAS40-04 D?
+U 1 1 5C839169
+P 7025 2990
+AR Path="/5C839169" Ref="D?"  Part="1" 
+AR Path="/5C838825/5C839169" Ref="D8"  Part="1" 
+F 0 "D8" H 7025 3315 50  0000 C CNN
+F 1 "BAV99W" H 7025 3224 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 6775 3290 50  0001 L CNN
+F 3 "" H 6905 3090 50  0001 C CNN
+F 4 "100V/150mA/4ns" H 7025 2990 50  0001 C CNN "req"
+	1    7025 2990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C839171
+P 7660 3095
+AR Path="/5C839171" Ref="R?"  Part="1" 
+AR Path="/5C838825/5C839171" Ref="R16"  Part="1" 
+F 0 "R16" H 7550 3245 50  0000 L CNN
+F 1 "4k7" V 7660 3025 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 7590 3095 50  0001 C CNN
+F 3 "" H 7660 3095 50  0001 C CNN
+F 4 "63mW/1%" V 7765 3090 28  0000 C CNN "req"
+	1    7660 3095
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C839179
+P 6780 3295
+AR Path="/5C839179" Ref="R?"  Part="1" 
+AR Path="/5C838825/5C839179" Ref="R14"  Part="1" 
+F 0 "R14" V 6700 3220 50  0000 L CNN
+F 1 "2k37" V 6780 3205 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 6710 3295 50  0001 C CNN
+F 3 "" H 6780 3295 50  0001 C CNN
+F 4 "63mW/1%" V 6885 3290 28  0000 C CNN "req"
+	1    6780 3295
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C839181
+P 7290 3295
+AR Path="/5C839181" Ref="R?"  Part="1" 
+AR Path="/5C838825/5C839181" Ref="R15"  Part="1" 
+F 0 "R15" V 7210 3220 50  0000 L CNN
+F 1 "2k37" V 7290 3200 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 7220 3295 50  0001 C CNN
+F 3 "" H 7290 3295 50  0001 C CNN
+F 4 "63mW/1%" V 7395 3290 28  0000 C CNN "req"
+	1    7290 3295
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7140 3295 7025 3295
+Wire Wire Line
+	6515 2985 6515 2890
+Wire Wire Line
+	6515 2890 6725 2890
+Wire Wire Line
+	6515 3185 6515 3295
+Wire Wire Line
+	6515 3295 6630 3295
+Wire Wire Line
+	7025 3090 7025 3295
+Connection ~ 7025 3295
+Wire Wire Line
+	7025 3295 6930 3295
+Wire Wire Line
+	6515 2890 6425 2890
+Connection ~ 6515 2890
+$Comp
+L power:GND #PWR?
+U 1 1 5C83919A
+P 6425 2890
+AR Path="/5C83919A" Ref="#PWR?"  Part="1" 
+AR Path="/5C838825/5C83919A" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 6425 2640 50  0001 C CNN
+F 1 "GND" H 6430 2717 50  0000 C CNN
+F 2 "" H 6425 2890 50  0001 C CNN
+F 3 "" H 6425 2890 50  0001 C CNN
+	1    6425 2890
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7660 3245 7660 3295
+Wire Wire Line
+	7440 3295 7660 3295
+Connection ~ 7660 3295
+Wire Wire Line
+	7660 2945 7660 2890
+Wire Wire Line
+	7660 2890 7325 2890
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 5C8391A6
+P 7835 3605
+AR Path="/5C471068/5C8391A6" Ref="L?"  Part="1" 
+AR Path="/5C8391A6" Ref="L?"  Part="1" 
+AR Path="/5C838825/5C8391A6" Ref="L6"  Part="1" 
+F 0 "L6" V 7940 3600 50  0000 C CNN
+F 1 "BLM18KG121TN1D" V 7735 3580 28  0000 C CNN
+F 2 "A3IDES_footprints:R_0603_1608Metric" V 7969 3605 50  0001 C CNN
+F 3 "" H 7835 3605 50  0001 C CNN
+F 4 "120Ω@100MHz/3A" V 7785 3580 28  0000 C CNN "req"
+	1    7835 3605
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C8391AD
+P 7835 3755
+AR Path="/5C8391AD" Ref="#PWR?"  Part="1" 
+AR Path="/5C838825/5C8391AD" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 7835 3505 50  0001 C CNN
+F 1 "GND" H 7840 3582 50  0000 C CNN
+F 2 "" H 7835 3755 50  0001 C CNN
+F 3 "" H 7835 3755 50  0001 C CNN
+	1    7835 3755
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6515 3295 6280 3295
+Connection ~ 6515 3295
+Wire Wire Line
+	7660 2890 7660 2825
+Connection ~ 7660 2890
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C8391B8
+P 7660 2825
+AR Path="/5C8391B8" Ref="#PWR?"  Part="1" 
+AR Path="/5C838825/5C8391B8" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 7660 2675 50  0001 C CNN
+F 1 "+3.3V" H 7675 2998 50  0000 C CNN
+F 2 "" H 7660 2825 50  0001 C CNN
+F 3 "" H 7660 2825 50  0001 C CNN
+	1    7660 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7660 3295 7935 3295
+Wire Wire Line
+	7835 3195 7835 3455
+Wire Wire Line
+	7835 3195 7935 3195
+$Comp
+L Connector_Generic:Conn_01x02 P?
+U 1 1 5C8391C3
+P 8135 3295
+AR Path="/5C8391C3" Ref="P?"  Part="1" 
+AR Path="/5C838825/5C8391C3" Ref="P4"  Part="1" 
+F 0 "P4" H 8115 3410 50  0000 L CNN
+F 1 "70543-0001" V 8245 3110 28  0000 L CNN
+F 2 "A3IDES_footprints:Pin_1x02-XL" H 8135 3295 50  0001 C CNN
+F 3 "" H 8135 3295 50  0001 C CNN
+F 4 "1x2/2,54mm/male" V 8300 3045 28  0000 L CNN "req"
+F 5 "" H 8135 3295 50  0001 C CNN "alt"
+	1    8135 3295
+	1    0    0    1   
+$EndComp
+Text HLabel 2770 3295 0    50   Output ~ 0
+THERM-0
+Text HLabel 6280 3295 0    50   Output ~ 0
+THERM-1
+$Comp
+L Device:C_Small C?
+U 1 1 5D616D98
+P 3005 3085
+AR Path="/5D616D98" Ref="C?"  Part="1" 
+AR Path="/5C7CC220/5D616D98" Ref="C?"  Part="1" 
+AR Path="/5D03F01C/5D616D98" Ref="C?"  Part="1" 
+AR Path="/5C838825/5D616D98" Ref="C3"  Part="1" 
+F 0 "C3" V 2960 3130 50  0000 L CNN
+F 1 "100n" V 3170 3020 50  0000 L CNN
+F 2 "A3IDES_footprints:C_0402_1005Metric" H 3043 2935 50  0001 C CNN
+F 3 "" H 3005 3085 50  0001 C CNN
+F 4 "16V/X7R/10%" V 3105 2935 28  0000 L CNN "req"
+	1    3005 3085
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D617172
+P 6515 3085
+AR Path="/5D617172" Ref="C?"  Part="1" 
+AR Path="/5C7CC220/5D617172" Ref="C?"  Part="1" 
+AR Path="/5D03F01C/5D617172" Ref="C?"  Part="1" 
+AR Path="/5C838825/5D617172" Ref="C4"  Part="1" 
+F 0 "C4" V 6470 3130 50  0000 L CNN
+F 1 "100n" V 6680 3020 50  0000 L CNN
+F 2 "A3IDES_footprints:C_0402_1005Metric" H 6553 2935 50  0001 C CNN
+F 3 "" H 6515 3085 50  0001 C CNN
+F 4 "16V/X7R/10%" V 6615 2935 28  0000 L CNN "req"
+	1    6515 3085
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor TH1
+U 1 1 5CFF0186
+P 3540 5450
+F 0 "TH1" H 3645 5524 50  0000 L CNN
+F 1 "NTCG104LH104JTDS" H 3645 5433 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3540 5450 50  0001 C CNN
+F 3 "" H 3540 5450 50  0001 C CNN
+F 4 "100k/5%" H 3645 5359 28  0000 L CNN "req"
+	1    3540 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CFF0369
+P 3540 5010
+AR Path="/5CFF0369" Ref="R?"  Part="1" 
+AR Path="/5C838825/5CFF0369" Ref="R77"  Part="1" 
+F 0 "R77" H 3330 5020 50  0000 L CNN
+F 1 "4k7" V 3540 4940 50  0000 L CNN
+F 2 "A3IDES_footprints:R_0402_1005Metric" V 3470 5010 50  0001 C CNN
+F 3 "" H 3540 5010 50  0001 C CNN
+F 4 "63mW/1%" V 3645 5005 28  0000 C CNN "req"
+	1    3540 5010
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3540 5250 3540 5205
+$Comp
+L power:GND #PWR?
+U 1 1 5CFF0981
+P 3540 5650
+AR Path="/5CFF0981" Ref="#PWR?"  Part="1" 
+AR Path="/5C838825/5CFF0981" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 3540 5400 50  0001 C CNN
+F 1 "GND" H 3705 5570 50  0000 C CNN
+F 2 "" H 3540 5650 50  0001 C CNN
+F 3 "" H 3540 5650 50  0001 C CNN
+	1    3540 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D001B94
+P 3540 4860
+AR Path="/5D001B94" Ref="#PWR?"  Part="1" 
+AR Path="/5C838825/5D001B94" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 3540 4710 50  0001 C CNN
+F 1 "+3.3V" H 3555 5033 50  0000 C CNN
+F 2 "" H 3540 4860 50  0001 C CNN
+F 3 "" H 3540 4860 50  0001 C CNN
+	1    3540 4860
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3540 5205 3375 5205
+Connection ~ 3540 5205
+Wire Wire Line
+	3540 5205 3540 5160
+Text HLabel 3375 5205 0    50   Output ~ 0
+THERM-2
+$EndSCHEMATC

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 2209)(type Legacy)(uri C:/Users/Johnny/Documents/Projects/A3IDES-board/v01/2209.lib)(options "")(descr ""))
+  (lib (name A3IDES-rescue)(type Legacy)(uri ${KIPRJMOD}/A3IDES-rescue.lib)(options "")(descr ""))
+)

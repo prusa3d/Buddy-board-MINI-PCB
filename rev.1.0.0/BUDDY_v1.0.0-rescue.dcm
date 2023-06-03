@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM25011-Converter_DCDC
+F TFSOP-10 Texas Instruments
+$ENDCMP
+#
+$CMP MCU-STM32F407VGT6(LQFP100)-MCU_ST_STM32F4
+F LQFP-100 STMicroelectronics
+$ENDCMP
+#
+$CMP W25Q32JVSSIQ-A3IDES-rescue
+F Unavailable
+$ENDCMP
+#
+#End Doc Library
